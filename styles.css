@@ -1,0 +1,227 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Education Section */
+.education-entry {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-entry h3 {
+    margin-bottom: 5px;
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills-list div {
+    margin-bottom: 20px;
+}
+
+.skills-list ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-bottom: 5px;
+}
+
+.project-dates {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    margin-bottom: 10px;
+}
+
+.project-description {
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Specializations Section */
+.specialization {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.specialization-dates, .specialization-location {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Medium Articles Section */
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Changed to space-around for better spacing */
+}
+
+.article {
+    margin: 20px 10px; /* Added margin for spacing */
+    background-color: #fff;
+    border-radius: 10px; /* Increased border-radius for softer corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+    width: 45%; /* Adjusted width for two articles per row */
+    min-width: 320px; /* Adjusted minimum width */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.article:hover {
+    transform: translateY(-5px); /* Slightly raise the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.article-link {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    text-decoration: none;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.article-summary {
+    font-size: 0.9rem;
+    color: #555; /* Slightly darker text color */
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.contact-details {
+    text-align: left;
+    display: inline-block; /* To align text to the left and contain width */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}

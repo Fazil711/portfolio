@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Articles - Fazil Shaikh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       </header>
+
+    <main>
+        <section id="medium" class="container">
+            <h2>Medium Articles</h2>
+            <div class="article-container">
+                <div class="article">
+                    <a href="https://medium.com/@fazil1984/how-transformers-architecture-works-7ad677c67478" target = "_blank" class="article-link">
+                        <img src="assets/Article1.jpg" alt="Article 1 Image" class="article-image">
+                        <div class="article-content">
+                            <h3>How Transformers architecture works</h3>
+                            <p class="article-summary">Understanding what lies beneath the transformer architecture and what are it's coponenets.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="article">
+                    <a href="https://medium.com/@fazil1984/how-chain-of-thought-cot-reasoning-elevates-ai-problem-solving-cot-without-prompting-600a4c12724b" target = "_blank" class="article-link">
+                        <img src="assets/Article2.jpg" alt="Article 2 Image" class="article-image">
+                        <div class="article-content">
+                            <h3>How Chain of Thought (CoT) Reasoning Elevates AI Problem-Solving: CoT without Prompting</h3>
+                            <p class="article-summary">Explaining how new CoT method without prompting works based on latest research.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Get the header element from the about.html page
+        const aboutHeader = document.querySelector('header');
+        const aboutFooter = document.querySelector('footer');
+        
+        // Fetch the content of index.html
+        fetch('index.html')
+          .then(response => response.text())
+          .then(html => {
+            // Create a temporary element to parse the fetched HTML
+            const tempElement = document.createElement('div');
+            tempElement.innerHTML = html;
+        
+            // Get the header element from index.html
+            const indexHeader = tempElement.querySelector('header');
+            const indexFooter = tempElement.querySelector('footer');
+        
+            // Replace the content of the about.html header with the index.html header
+            aboutHeader.innerHTML = indexHeader.innerHTML;
+            aboutFooter.innerHTML = indexFooter.innerHTML;
+          });
+        </script>
+</body>
+</html>
